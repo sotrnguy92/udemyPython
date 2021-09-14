@@ -19,6 +19,18 @@ def evenOddPrint():
         print(num1%10000);
 
 
+# Read an integer and do the following:
+# ○ If number < 10000, print this is a small number
+# ○ Otherwise Sum the last 3 digits of the number
+#       ■If the sum is odd, print this is a great number
+#       ■Otherwise, If sum is even:
+#           ●If any digit of the last 3 digits is odd, print this is a good number
+#           ●Otherwise, print this is a bad number
+# ●Stop the video and think: 1) Code 2) Good tests
+# ○ Be a good tester:
+# ○ Find all needed test cases that covers all possible scenarios
+
+
 def last3Digits():
     numLast3 = int(input("Enter a number: "));
 
@@ -37,4 +49,3 @@ def last3Digits():
             else:
                 print("this is a bad number");
 
-last3Digits();
