@@ -35,4 +35,31 @@ def calculator():
 
 
 
-# create a function that reads
+# create a function that reads 2 integers and prints the minimum of the two
+
+def minimum():
+    num1, num2 = map(int, input("enter two numbers: ").split());
+
+    if num1 < num2:
+        print("the minimum is: ", num1);
+    else:
+        print("the minimum is: ", num2);
+
+
+# Create a function that gets the minimum of 3 numbers
+
+def minimum3():
+    smallest = 0
+    num1, num2, num3 = map(float, input("Enter 3 numbers: ").split())
+
+    if (num1 < num2):
+        smallest = num1;
+    else:
+        smallest = num2;
+
+    if (num3 < smallest):
+        smallest = num3;
+
+    print("the smallest number is: ", smallest);
+
+minimum3();
