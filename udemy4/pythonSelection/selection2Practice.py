@@ -19,4 +19,22 @@ def evenOddPrint():
         print(num1%10000);
 
 
-evenOddPrint()
+def last3Digits():
+    numLast3 = int(input("Enter a number: "));
+
+    if numLast3 < 10000:
+        print("this is a small number.");
+    else:
+        firstDigit = numLast3%10
+        secondDigit = int(numLast3%100/10);
+        thirdDigit = int(numLast3%1000/100);
+
+        if (firstDigit+secondDigit+thirdDigit)%2 ==1:
+            print("this is a great number.");
+        else:
+            if firstDigit%2 == 1 or secondDigit%2 == 1 or thirdDigit%2 ==1:
+                print("this is a good number");
+            else:
+                print("this is a bad number");
+
+last3Digits();
