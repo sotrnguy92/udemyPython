@@ -42,5 +42,7 @@ def overlappingInterval():
 
     if intervals[0] < intervals[3] and intervals[1] > intervals[2]:
         print("the overlapping interval is: ", [max(intervals[0], intervals[2]), min(intervals[1], intervals[3]) ])
+    else:
+        print(-1)
 
 overlappingInterval()
