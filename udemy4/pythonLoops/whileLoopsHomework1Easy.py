@@ -37,3 +37,42 @@ def repeatString():
 # Read integer N.
 # ● Print a face down left angled triangle that has N rows as in picture
 
+def createDownTriangle():
+    num = int(input("How big do you want the triangle? "));
+    while num > 0:
+        print ("*" * num);
+        num -= 1;
+
+
+
+# ● Read integer N, followed by reading N numbers
+# ○ Each on separate lines
+# ● Print 2 values
+# ○ The average of the numbers in odd positions (1st, 3rd, 5th, …)
+# ○ The average of the numbers in even positions (2nd, 4th, 6th, …)
+# ● Explantation
+# ○ (10+20+30)/3 = 20
+# ○ (100+200+600)/3 = 300
+
+def specialAverage():
+    nums = int(input("How many numbers would you like to enter?: "));
+    oddSum = 0;
+    evenSum = 0;
+
+    x = 1
+    oddCount = 0;
+    evenCount = 0;
+    while x <= nums:
+        enterNum = int(input("Enter a number:"));
+        if x%2 == 0:
+            evenSum += enterNum;
+            evenCount += 1;
+        else:
+            oddSum += enterNum;
+            oddCount += 1;
+
+        x += 1;
+
+    print("average of numbers in the odd position: ", oddSum/oddCount);
+    print("average of numbers in the even position: ", evenSum/evenCount);
+
